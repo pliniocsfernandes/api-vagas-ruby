@@ -12,7 +12,7 @@ O ambiente deve funcionar em macOS e windows caso o docker esteja corretamente c
 Para o setup inicial do ambiente docker é necessário rodar os seguintes comandos na pasta raiz do projeto:
 ```
 docker-compose build
-docker-compose run web rake db:create
+docker-compose run web rake db:setup
 ``` 
 
 Depois, para rodar a aplicação basta executar:
