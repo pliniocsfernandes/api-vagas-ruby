@@ -1,0 +1,28 @@
+{
+  "id": "file:/job_opportunity.json#",
+  "type": "object",
+  "required": [
+    "empresa",
+    "titulo",
+    "descricao",
+    "localizacao",
+    "nivel"
+  ],
+  "properties": {
+    "empresa": {
+      "type": "string"
+    },
+    "titulo": {
+      "type": "string"
+    },
+    "descricao": {
+      "type": "string"
+    },
+    "localizacao": {
+      "type": "string"
+    },
+    "nivel": {
+      "type": "integer"
+    }
+  }
+}

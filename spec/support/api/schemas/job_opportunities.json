@@ -1,0 +1,7 @@
+{
+  "id": "file:/job_opportunities.json#",
+  "type": "array",
+  "items": {
+    "$ref": "file:/job_opportunity.json#"
+  }
+}

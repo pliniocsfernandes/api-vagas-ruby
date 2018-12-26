@@ -94,3 +94,7 @@ RSpec.configure do |config|
   Kernel.srand config.seed
 =end
 end
+
+require 'json_matchers/rspec'
+
+JsonMatchers.schema_root = "spec/support/api/schemas"
