@@ -18,6 +18,6 @@ class FullJobApplicationSerializer < ActiveModel::Serializer
   end
 
   def score
-
+    ScoreCalculatorService.new(object).calculate_score
   end
 end
