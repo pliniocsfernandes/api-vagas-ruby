@@ -1,6 +1,6 @@
 class CreateJobOportunities < ActiveRecord::Migration[5.2]
   def change
-    create_table :job_oportunities do |t|
+    create_table :job_opportunities do |t|
       t.string :company
       t.string :title
       t.text :description

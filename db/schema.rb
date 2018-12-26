@@ -24,14 +24,14 @@ ActiveRecord::Schema.define(version: 2018_12_26_151142) do
 
   create_table "job_applications", force: :cascade do |t|
     t.bigint "person_id"
-    t.bigint "job_oportunity_id"
+    t.bigint "job_opportunity_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["job_oportunity_id"], name: "index_job_applications_on_job_oportunity_id"
+    t.index ["job_opportunity_id"], name: "index_job_applications_on_job_opportunity_id"
     t.index ["person_id"], name: "index_job_applications_on_person_id"
   end
 
-  create_table "job_oportunities", force: :cascade do |t|
+  create_table "job_opportunities", force: :cascade do |t|
     t.string "company"
     t.string "title"
     t.text "description"
@@ -39,7 +39,7 @@ ActiveRecord::Schema.define(version: 2018_12_26_151142) do
     t.integer "level"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["location_id"], name: "index_job_oportunities_on_location_id"
+    t.index ["location_id"], name: "index_job_opportunities_on_location_id"
   end
 
   create_table "locations", force: :cascade do |t|
@@ -68,8 +68,8 @@ ActiveRecord::Schema.define(version: 2018_12_26_151142) do
     t.index ["location_id"], name: "index_people_on_location_id"
   end
 
-  add_foreign_key "job_applications", "job_oportunities"
+  add_foreign_key "job_applications", "job_opportunities"
   add_foreign_key "job_applications", "people"
-  add_foreign_key "job_oportunities", "locations"
+  add_foreign_key "job_opportunities", "locations"
   add_foreign_key "people", "locations"
 end
