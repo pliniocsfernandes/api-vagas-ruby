@@ -3,6 +3,7 @@ require 'rails_helper'
 RSpec.describe Location, type: :model do
   it { should have_many(:src_paths) }
   it { should have_many(:dst_paths) }
+  it { should validate_presence_of(:name) }
 
   it 'must return both src paths and dst paths' do
     location1 = create(:location)
