@@ -1,0 +1,19 @@
+{
+  "id": "file:/job_application.json#",
+  "type": "object",
+  "required": [
+    "id_vaga",
+    "id_pessoa"
+  ],
+  "properties": {
+    "id": {
+      "type": "integer"
+    },
+    "id_vaga": {
+      "type": "integer"
+    },
+    "id_pessoa": {
+      "type": "integer"
+    }
+  }
+}

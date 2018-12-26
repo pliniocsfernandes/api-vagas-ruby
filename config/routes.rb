@@ -3,5 +3,6 @@ Rails.application.routes.draw do
   namespace :v1, defaults: {format: 'json'} do
     resources :job_opportunities, path: '/vagas', only: [:create]
     resources :people, path: '/pessoas', only: [:create]
+    resources :job_applications, path: '/candidaturas', only: [:create]
   end
 end
