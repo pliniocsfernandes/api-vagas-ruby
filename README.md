@@ -1,24 +1,40 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Desenvolvimento
+O ambiente deve funcionar em macOS e windows caso o docker esteja corretamente configurado, mas foi testado apenas em linux.
 
-Things you may want to cover:
+### Pré requisitos
+- [docker](https://docs.docker.com/install/)
+- [docker-compose](https://docs.docker.com/compose/install/)
+- As portas `3000` e `15432` devem estar liberadas
 
-* Ruby version
+### Setup
+Para o setup inicial do ambiente docker é necessário rodar os seguintes comandos na pasta raiz do projeto:
+```
+docker-compose build
+docker-compose run web rake db:create
+``` 
 
-* System dependencies
+Depois, para rodar a aplicação basta executar:
+```
+docker-compose up
+```
 
-* Configuration
+A aplicação estará disponível em http://127.0.0.1:3000/
 
-* Database creation
+O banco de dados estará disponível em:
+- host: 127.0.0.1
+- port: 15432
+- user: postgres
+- pass: 
 
-* Database initialization
+### Utilização
+Para utilizar o ambiente no docker, o modo mais fácil é acessar o container para poder rodar comandos:
+```
+docker-compose exec --user=user web bash
+```
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Produção
+### Pré requisitos
+- Ruby 2.5.3
+- Postgres 11.1
