@@ -1,9 +1,0 @@
-# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
-
-one:
-  person: one
-  job_oportunity: one
-
-two:
-  person: two
-  job_oportunity: two
