@@ -1,0 +1,28 @@
+{
+  "id": "file:/full_job_applications.json#",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": [
+      "nome",
+      "profissao",
+      "localizacao",
+      "nivel"
+
+    ],
+    "properties": {
+      "nome": {
+        "type": "string"
+      },
+      "profissao": {
+        "type": "string"
+      },
+      "localizacao": {
+        "type": "string"
+      },
+      "nivel": {
+        "type": "integer"
+      }
+    }
+  }
+}

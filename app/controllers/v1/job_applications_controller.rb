@@ -13,5 +13,10 @@ module V1
           person: Person.find_by(id: p[:id_pessoa]),
       }
     end
+
+    def ranking
+      @job_applications = JobApplication.where job_opportunity_id: params[:job_opportunity_id]
+      render json: @job_applications, each_serializer: FullJobApplicationSerializer
+    end
   end
 end
