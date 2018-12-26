@@ -1,4 +1,5 @@
 class JobOpportunitySerializer < ActiveModel::Serializer
+  attributes :id
   attribute :company, key: :empresa
   attribute :title, key: :titulo
   attribute :description, key: :descricao
