@@ -15,7 +15,11 @@ module V1
     end
 
     def ranking
-      @job_applications = JobApplication.where job_opportunity_id: params[:job_opportunity_id]
+      @job_applications = JobApplication
+                              .where(job_opportunity_id: params[:job_opportunity_id])
+                              .sort_by {|j| ScoreCalculatorService.new(j).calculate_score}
+                              .reverse! #fastest way
+
       render json: @job_applications, each_serializer: FullJobApplicationSerializer
     end
   end
