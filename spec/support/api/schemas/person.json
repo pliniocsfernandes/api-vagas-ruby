@@ -1,0 +1,24 @@
+{
+  "id": "file:/person.json#",
+  "type": "object",
+  "required": [
+    "nome",
+    "profissao",
+    "localizacao",
+    "nivel"
+  ],
+  "properties": {
+    "nome": {
+      "type": "string"
+    },
+    "profissao": {
+      "type": "string"
+    },
+    "localizacao": {
+      "type": "string"
+    },
+    "nivel": {
+      "type": "integer"
+    }
+  }
+}
