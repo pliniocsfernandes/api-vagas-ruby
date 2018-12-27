@@ -21,13 +21,9 @@ O ambiente deve funcionar em macOS e windows caso o docker esteja corretamente c
 Para o setup inicial do ambiente docker é necessário rodar os seguintes comandos na pasta raiz do projeto:
 ```
 docker-compose build
+docker-compose up -d
 docker-compose run web rake db:setup
 ``` 
-
-Depois, para rodar a aplicação basta executar:
-```
-docker-compose up
-```
 
 A aplicação estará disponível em http://127.0.0.1:3000/
 
@@ -36,6 +32,11 @@ O banco de dados estará disponível em:
 - port: 15432
 - user: postgres
 - pass: 
+
+Nas próximas vezes, para rodar a aplicação basta executar:
+```
+docker-compose up -d
+```
 
 ### Utilização
 Para utilizar o ambiente no docker, o modo mais fácil é acessar o container para poder rodar comandos:
