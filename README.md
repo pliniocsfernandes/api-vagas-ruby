@@ -1,13 +1,13 @@
 # README
 
-A solução utiliza a linguagem Ruby e o framework Rails no modo API para implementar o desafio.
-A aplicação está configurada para utilizar um banco de dados Postgres, mas não há nada específico do banco, pois toda a aplicação é gerenciada pela ORM do Rails.
-Algumas configurações das considerações gerais foram colocadas em banco de dados para facilitar a evolução da aplicação ou a utilização com um cenário diferente.
-Inicialmente tanto os níveis de experiência quanto as localidades e o mapa ficariam no banco de dados, porém a parte de nível de experiência foi deixada sem mapeamento, pois os endpoints não precisavam de tradução.
-Além disto é utilizado o RSpec para criação dos testes automatizados.
-Para o ambiente de desenvolvimento com o código estão os arquivos de configuração do Docker para facilitar.
-As respostas da API seguem o padrão REST, porém só foram implementados os endpoints solicitados no desafio.
-Ao final há uma sugestão com os próximos passos. Algumas coisas foram deixadas de lado na solução por questões de tempo disponível.
+A solução utiliza a linguagem Ruby e o framework Rails no modo API para implementar o desafio.  
+A aplicação está configurada para utilizar um banco de dados Postgres, mas não há nada específico do banco, pois toda a aplicação é gerenciada pela ORM do Rails.  
+Algumas configurações das considerações gerais foram colocadas em banco de dados para facilitar a evolução da aplicação ou a utilização com um cenário diferente.  
+Inicialmente tanto os níveis de experiência quanto as localidades e o mapa ficariam no banco de dados, porém a parte de nível de experiência foi deixada sem mapeamento, pois os endpoints não precisavam de tradução.  
+Além disto é utilizado o RSpec para criação dos testes automatizados.  
+Para o ambiente de desenvolvimento com o código estão os arquivos de configuração do Docker para facilitar.  
+As respostas da API seguem o padrão REST, porém só foram implementados os endpoints solicitados no desafio.  
+Ao final há uma sugestão com os próximos passos. Algumas coisas foram deixadas de lado na solução por questões de tempo disponível.  
 
 ## Desenvolvimento
 O ambiente deve funcionar em macOS e windows caso o docker esteja corretamente configurado, mas foi testado apenas em linux.
